@@ -1,0 +1,7 @@
+#!/bin/sh
+
+for acct in "$@"
+do
+  echo "Opening the $acct account"
+  open -a Gnucash -n --args ~/Documents/Accounts/$acct/$acct.gnucash
+done
