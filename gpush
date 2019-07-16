@@ -1,0 +1,5 @@
+#!/bin/sh
+
+git add --all
+git commit -m "`shuf -n3 /usr/share/dict/words | paste -sd ' ' -`"
+git push
